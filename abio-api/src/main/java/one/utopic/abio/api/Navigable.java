@@ -18,10 +18,10 @@
  */
 package one.utopic.abio.api;
 
-public interface Navigable extends Seekable {
+public interface Navigable {
 
-    int getPosition();
+    long getPosition();
 
-    int navigate(int position);
+    long navigate(long position);
 
 }
