@@ -18,8 +18,9 @@
  */
 package one.utopic.abio.api;
 
+//TODO Reconsider hierarchy
 public interface Seekable extends Skippable {
 
-    int seek(int byteCount);
+	int seek(int byteCount);
 
 }

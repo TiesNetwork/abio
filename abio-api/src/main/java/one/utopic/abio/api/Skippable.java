@@ -20,8 +20,9 @@ package one.utopic.abio.api;
 
 import java.io.IOException;
 
+//TODO Reconsider hierarchy
 public interface Skippable {
 
-    int skip(int byteCount) throws IOException;
+	int skip(int byteCount) throws IOException;
 
 }
