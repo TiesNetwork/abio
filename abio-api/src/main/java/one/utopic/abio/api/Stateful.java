@@ -66,6 +66,7 @@ public interface Stateful {
 					case OPENED:
 					case READY:
 						return true;
+					// $CASES-OMITTED$
 					default:
 						return false;
 					}
@@ -74,6 +75,7 @@ public interface Stateful {
 					case OPENED:
 					case READY:
 						return true;
+					// $CASES-OMITTED$
 					default:
 						return false;
 					}
@@ -81,6 +83,7 @@ public interface Stateful {
 					switch ((ResourceState) stateTo) {
 					case READY:
 						return true;
+					// $CASES-OMITTED$
 					default:
 						return false;
 					}
@@ -91,6 +94,7 @@ public interface Stateful {
 					case CLOSING:
 					case CLOSED:
 						return true;
+					// $CASES-OMITTED$
 					default:
 						return false;
 					}
@@ -101,6 +105,7 @@ public interface Stateful {
 					case CLOSING:
 					case CLOSED:
 						return true;
+					// $CASES-OMITTED$
 					default:
 						return false;
 					}
@@ -110,6 +115,7 @@ public interface Stateful {
 					case CLOSING:
 					case CLOSED:
 						return true;
+					// $CASES-OMITTED$
 					default:
 						return false;
 					}
@@ -117,6 +123,7 @@ public interface Stateful {
 					switch ((ResourceState) stateTo) {
 					case CLOSED:
 						return true;
+					// $CASES-OMITTED$
 					default:
 						return false;
 					}
@@ -125,10 +132,12 @@ public interface Stateful {
 					switch ((ResourceState) stateTo) {
 					case DESTROYED:
 						return true;
+					// $CASES-OMITTED$
 					default:
 						return false;
 					}
 				case DESTROYED:
+				default:
 					return false;
 				}
 			}
